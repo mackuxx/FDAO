@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:resource type="javascript"
+                   source="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"/>
+      <af:resource type="javascript" source="/js/jquery.growl.js"/>
+      <af:resource type="css" source="/style/jquery.growl.css"/>
+      <af:form id="f1">
+        <af:panelGroupLayout id="pgl1" layout="vertical">
+          <af:spacer width="10" height="10" id="s3"/>
+          <af:commandButton text="Show Error Message" id="cb1"
+                            inlineStyle="width:150px;text-align:center;font-weight:bold;color:red;"
+                            actionListener="#{viewScope.JqMensaje.showErrMessageAction}"/>
+          <af:spacer width="10" height="10" id="s1"/>
+          <af:commandButton text="Show Warning Message" id="cb2"
+                            inlineStyle="width:150px;text-align:center;font-weight:bold;color:yellow;"
+                            actionListener="#{viewScope.JqMensaje.showWarningMessageAction}"/>
+          <af:spacer width="10" height="10" id="s2"/>
+          <af:commandButton text="Show Notice" id="cb3"
+                            inlineStyle="width:150px;text-align:center;font-weight:bold;color:navy;"
+                            actionListener="#{viewScope.JqMensaje.showNoticeMessageAction}"/>
+        </af:panelGroupLayout>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
