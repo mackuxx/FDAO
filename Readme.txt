@@ -1,3 +1,1 @@
-contiene proyecto con codigo adf, para implementar funcionalidades
-
-mas lineas de prueba
+Contiene proyecto con codigo adf, para implementar funcionalidades.
