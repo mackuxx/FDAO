@@ -23,7 +23,7 @@ public class ShowJqNotification {
      * @param actionEvent
      */
     public void showErrMessageAction(ActionEvent actionEvent) {
-        calljqHelper("$.growl.error({ message: \"Hi this is error message! This message is too long to read, Just read it and see how it looks\" });");
+        calljqHelper("$.growl.error({ message: \"Hi this is error message!!! This message is too long to read, Just read it and see how it looks\" });");
 
     }
 
